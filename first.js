@@ -12,12 +12,13 @@ const locations_in_ahmedabad = [
 const select_grid = document.getElementsByClassName('select-grid')[0];
 
 function AppendChild(obj) {
-
     obj.forEach(element => {
         const one = document.createElement('div');
         one.className = "one";
         select_grid.appendChild(one);
-
+        one.addEventListener('click',()=>{
+            window.location.href = "./index.html"
+        })
         const one_1 = document.createElement('div');
         one_1.className = "one-1";
         one_1.textContent = element.place;
@@ -29,18 +30,17 @@ function AppendChild(obj) {
         one.appendChild(one_2);
 
     });
-   function see_more_fun(){
-    const see_more= document.createElement('div');
-    see_more.className = "one";
-    select_grid.appendChild(see_more)
+    function see_more_fun() {
+        const see_more = document.createElement('div');
+        see_more.className = "one";
+        select_grid.appendChild(see_more)
 
-    const see = document.createElement('div');
-    see.textContent=  "See more";
-    see.className = "one-1"
-    see_more.appendChild(see)
-   }
-   see_more_fun();
-
+        const see = document.createElement('div');
+        see.textContent = "See more";
+        see.className = "one-1"
+        see_more.appendChild(see)
+    }
+    see_more_fun();
 }
 
 const middle_card = [
@@ -63,22 +63,22 @@ const middle_card = [
 function middle_function(middle) {
     // Ensure that middle_div exists
     const middle_div = document.querySelector('.middle-div'); // Or replace with the correct selector
-    
+
     middle.forEach((element) => {
         const middle_card_1 = document.createElement('div');
         middle_card_1.className = "middle-card-1";
         middle_card_1.style.backgroundImage = `url(${element.image})`;
         middle_div.appendChild(middle_card_1);
-    
+
         const bottom_text = document.createElement('div');
         bottom_text.className = 'bottom-text';
         middle_card_1.appendChild(bottom_text);
-    
+
         const bottom_text_top = document.createElement('div');
         bottom_text_top.className = "bottom-text-top";
         bottom_text_top.textContent = element.first_text;
         bottom_text.appendChild(bottom_text_top);
-    
+
         const bottom_text_bottom = document.createElement('div');
         bottom_text_bottom.className = "bottom-text-bottom";
         bottom_text_bottom.textContent = element.second_text;
@@ -109,7 +109,7 @@ const third_part = [
 ];
 function third(third_part) {
     const slides_div = document.querySelector('.slides-div');
-    
+
     third_part.forEach((element) => {
         const image_1 = document.createElement('div');
         image_1.className = 'image-1';
@@ -136,7 +136,7 @@ middle_function(middle_card);
 AppendChild(locations_in_ahmedabad)
 
 const one1 = document.getElementsByClassName('one')[0];
-one1.addEventListener('click',()=>{
-    window.location.href ="./index.html";
+one1.addEventListener('click', () => {
+    window.location.href = "./index.html";
 })
 

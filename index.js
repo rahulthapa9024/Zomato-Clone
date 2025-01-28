@@ -231,37 +231,7 @@ const grid_card_info = [
         six: "Opens at 11am",
         seven : "1.6"
     },
-    {
-        image:"./card-images/twentytwo.avif",
-        one :"Aambli Restaurant & Banquets",
-        two :"3.9",
-        three : "North Indian, Italian, Mexican, Biryani, Chinese, Desserts, Continental, Beverages",
-        four : "₹1,100 for two",
-        five: "Nikol, Ahmedabad",
-        six: "Opens at 11am",
-        seven : "3.9"
-    },
-    {
-        image:"./card-images/twentythree.avif",
-        one :"Coffee Stand",
-        two :"-",
-        three : "Cafe, Coffee, Beverages, Pizza",
-        four : "₹300 for two",
-        five: "Nikol, Ahmedabad",
-        six: "Opens at 11am",
-        seven : "3.8"
-    },
-    {
-        image:"./card-images/twentyfour.avif",
-        one :"Wow! Momo",
-        two :"3.7",
-        three : "Momos, Fast Food",
-        four : "₹350 for two",
-        five: "Nikol, Ahmedabad",
-        six: "Opens at 11am",
-        seven : "3.7"
-    },
-
+   
 ];
 function load_cards(grid_card_info){
     const last_grid = document.getElementsByClassName('last-grid')[0];
