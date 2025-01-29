@@ -230,8 +230,35 @@ const grid_card_info = [
         five: "Nikol, Ahmedabad",
         six: "Opens at 11am",
         seven : "1.6"
+    },{
+        image:"./card-images/twelve.avif",
+        one :"Jacaranda - The Ummed",
+        two :"4.5",
+        three : "North Indian, Continental, Gujarati, Italian",
+        four : "₹3000 for two",
+        five: "The Gateway Hotel Ummed, Hansol",
+        six: "Opens at 11am",
+        seven : "4.4"
     },
-   
+    {
+        image:"./card-images/twenty.avif",
+        one :"Megma Restaurant & Banquets",
+        two :"4.6",
+        three : "North Indian, Oriental, Salad",
+        four : "₹1400 for two",
+        five: "Odhav, Ahmedabad",
+        six: "Opens at 11am",
+        seven : "4.4"
+    },{
+        image:"./card-images/fourteen.avif",
+        one :"Kesar - The Ummed",
+        two :"3.9",
+        three : "North Indian, Mughlai, Biryani",
+        four : "₹3000 for two",
+        five: "The Gateway Hotel Ummed, Hansol, Ahmedabad",
+        six: "Opens at 11am",
+        seven : "4.5"
+    }
 ];
 function load_cards(grid_card_info){
     const last_grid = document.getElementsByClassName('last-grid')[0];
