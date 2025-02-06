@@ -19,6 +19,8 @@ header {
     background-image: url(./81f3ff974d82520780078ba1cfbd453a1583259680.avif);
     height: 60%;
     margin-bottom: 3%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .top-part-main {
