@@ -17,7 +17,7 @@ function AppendChild(obj) {
         one.className = "one";
         select_grid.appendChild(one);
         one.addEventListener('click',()=>{
-            window.location.href = "./index.html"
+            window.location.href = "./second.html"
         })
         const one_1 = document.createElement('div');
         one_1.className = "one-1";
@@ -137,6 +137,6 @@ AppendChild(locations_in_ahmedabad)
 
 const one1 = document.getElementsByClassName('one')[0];
 one1.addEventListener('click', () => {
-    window.location.href = "./index.html";
+    window.location.href = "./second.html";
 })
 

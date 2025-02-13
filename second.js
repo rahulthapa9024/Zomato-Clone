@@ -355,7 +355,7 @@ load_cards(grid_card_info);
 const zomato_button = document.getElementsByClassName('zomato-div')[0];
 function zomato_button_call(){
     zomato_button.addEventListener('click',()=>{
-        window.location.href = "./first.html";
+        window.location.href = "./index.html";
     })
 }
 zomato_button_call();
